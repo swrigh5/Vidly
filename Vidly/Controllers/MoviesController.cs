@@ -14,6 +14,8 @@ namespace Vidly.Controllers
         {
             var movie = new Movie() { Name = "House on Haunted Hill" };
             return View(movie);
+            //return RedirectToAction("Index", "Home", new { page = 1, sortBy = "name" });
+
         }
     }
 }
