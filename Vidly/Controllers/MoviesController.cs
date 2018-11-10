@@ -33,9 +33,12 @@ namespace Vidly.Controllers
             if (string.IsNullOrWhiteSpace(sortby))
                 sortby = "Name";
 
-            return Content(string.Format("pageIndex={0}&sortBy={1}", pageIndex, sortby));
+            return Content(string.Format("pageIndex={0}&sortBy={1}", pageIndex, sortby));            
+        }
 
-            
+        public ActionResult ByReleaseDate(int year, byte month)
+        {
+            return Content(year + "/" + month);
         }
 
     }
