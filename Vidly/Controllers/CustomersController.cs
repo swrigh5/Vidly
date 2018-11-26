@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -42,13 +43,13 @@ namespace Vidly.Controllers
 
         }
 
-        private IEnumerable<customers> GetCustomers()
+        private IEnumerable<Customer> GetCustomers()
         {
-            return new List<customers>
+            return new List<Customer>
             {
-                new customers { Id = 1, Name = "Stephen Wright" },
-                new customers { Id = 2, Name = "Todd Buffington" },
-                new customers { Id = 3, Name = "Fred Savage" }
+                new Customer { Id = 1, Name = "Stephen Wright" },
+                new Customer { Id = 2, Name = "Todd Buffington" },
+                new Customer { Id = 3, Name = "Fred Savage" }
             };
         }
 
